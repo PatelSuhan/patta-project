@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="front-header">
+                <div class="front-header-box1">
+                    <h5>
+                        Set Your <br> Cards
+                    </h5>
+                </div>
+                <div class="front-header-box2">
+                    <i class="fa-solid fa-circle-plus"></i>
+                </div>
+                <div class="front-header-box3">
+                    <i class="fa-solid fa-circle-plus"></i>
+                </div>
+            </div>
+            <div class="back-header">
+                <div class="back-header-box1">
+                    <i class="fa-solid fa-wifi"></i>
+                </div>
+                <div class="back-header-box2">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="section">
+                <div class="section-table"></div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <div class="card">
+                    <div class="card__face front-card">
+                        <img src="Image/joker.jpg" alt="" height="180px" width="108%">
+                    </div>
+                    <div class="card__face back-card">
+                        <img src="Image/card-back.jpg" alt="" height="180px" width="97%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__face front-card">
+                        <img src="Image/ekka.jpg" alt="" height="180px">
+                    </div>
+                    <div class="card__face back-card">
+                        <img src="Image/card-back.jpg" alt="" height="180px">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__face front-card">
+                        <img src="Image/king.jpg" alt="" height="180px">
+                    </div>
+                    <div class="card__face back-card">
+                        <img src="Image/card-back.jpg" alt="" height="180px">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__face front-card">
+                        <img src="Image/joker.jpg" alt="" height="180px" width="108%">
+                    </div>
+                    <div class="card__face back-card">
+                        <img src="Image/card-back.jpg" alt="" height="180px" width="97%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__face front-card">
+                        <img src="Image/king.jpg" alt="" height="180px">
+                    </div>
+                    <div class="card__face back-card">
+                        <img src="Image/card-back.jpg" alt="" height="180px">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__face front-card">
+                        <img src="Image/ekka.jpg" alt="" height="180px">
+                    </div>
+                    <div class="card__face back-card">
+                        <img src="Image/card-back.jpg" alt="" height="180px">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+<script>
+
+var cards = document.querySelectorAll('.card');
+
+[...cards].forEach((card)=>{
+  card.addEventListener( 'click', function() {
+    card.classList.toggle('is-flipped');
+  });
+});
+
+</script>

@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.main{
+    height: 550px;
+    width: 100%;
+    background-color: rgba(47, 80, 213, 0.982);
+    font-family: Roboto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: rgba(6, 36, 155, 0.982);
+    padding: 0 30px;
+}
+.front-header{
+    display: flex;
+    gap: 30px;
+}
+.front-header-box1{
+    height: 50px;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 15px;
+    border: 3px solid white;
+    border-radius: 25px;
+    background-color: darkgreen;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+.front-header-box1::after{
+    content: "T23$100";
+    font-size: 8px;
+    background-color: rgb(78, 77, 77);
+    padding: 2px 15px;
+    border-radius: 30px;
+}
+.front-header-box1::before{
+    content: "41";
+    position: absolute;
+    border: 2px solid yellow;
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+    font-size: 8px;
+    padding: 3px;
+    left: 67px;
+    top: -4px;
+}
+.front-header-box2{
+    height: 50px;
+    text-align: center;
+    padding: 15px 30px;
+    border: 3px solid white;
+    border-radius: 25px;
+    background-color: darkgreen;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+.front-header-box2::after{
+    content: "Add Now";
+    font-size: 8px;
+    background-color: rgb(78, 77, 77);
+    padding: 2px 15px;
+    border-radius: 30px;
+    position: absolute;
+    bottom: -9px;
+    right: 6px;
+}
+.front-header-box3{
+    height: 50px;
+    text-align: center;
+    padding: 15px 30px;
+    border: 3px solid white;
+    border-radius: 25px;
+    background-color: darkgreen;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+.front-header-box3::after{
+    content: "Add Now";
+    font-size: 8px;
+    background-color: rgb(78, 77, 77);
+    padding: 2px 15px;
+    border-radius: 30px;
+    position: absolute;
+    bottom: -9px;
+    right: 6px;
+}
+.back-header{
+    display: flex;
+    gap: 30px;
+}
+.back-header-box1{
+    height: 40px;
+    padding: 15px 15px;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.back-header-box2{
+    padding: 10px 13px;
+    background-color: rgba(15, 53, 201, 0.982);
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+
+/* section */
+
+.section{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-table{
+    height: 230px;
+    width: 65%;
+    background-color: lightgreen;
+    border: 15px solid rgb(98, 4, 4);
+    border-radius: 100px;
+}
+
+/* footer */
+
+.footer{
+    height: 181px;
+    background-color: rgba(6, 36, 155, 0.249);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card {
+    position: relative;
+    width: 10%;
+    height: 180px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 1s;
+  }
+  
+  .card.is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+  }
+  
+  .card__face {
+    position: absolute;
+    /* width: 100%; */
+    height: 180px;
+    /* line-height: 260px; */
+    color: white;
+    /* text-align: center; */
+    /* font-weight: bold; */
+    /* font-size: 40px; */
+    backface-visibility: hidden;
+    
+  }
+  
+  .front-card {
+    /* background: crimson; */
+    transform: rotateY(180deg);
+}
+
+.back-card {
+    /* background: slateblue; */
+  }
